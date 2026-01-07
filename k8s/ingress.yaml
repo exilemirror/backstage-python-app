@@ -1,0 +1,18 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: backstage-python-app
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: "backstage-example.local"
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: backstage-python-app
+            port:
+              number: 80

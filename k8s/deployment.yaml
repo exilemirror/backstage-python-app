@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backstage-python-app
+  labels:
+    app: backstage-python-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: backstage-python-app
+  template:
+    metadata:
+      labels:
+        app: backstage-python-app
+    spec:
+      containers:
+      - name: backstage-python-app
+        image: exilemirror/backstage-python-app:v1
+        ports:
+        - containerPort: 5000
