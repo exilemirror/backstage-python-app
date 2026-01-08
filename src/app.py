@@ -13,9 +13,10 @@ def home():
 
 def details():
     return jsonify({
-        'message': 'Welcome to the Details page.',
-        'time': datetime.datetime.now().strftime("%I:%M:%S%p on %B %d, %Y"),
-        'hostname': socket.gethostname()
+        "message": "Welcome to the Details page.",
+        "time": datetime.datetime.now().strftime("%I:%M:%S%p on %B %d, %Y"),
+        "hostname": socket.gethostname(),
+        "message": "Hello World!"
 
     })
 
@@ -23,7 +24,7 @@ def details():
 
 def health():
     return jsonify({
-        'status': 'up'
+        "status": "up"
     }), 200
 
 

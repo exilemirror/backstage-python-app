@@ -26,10 +26,3 @@ server:
     enabled: true
     ingressClassName: nginx
     tls: true
-
-configs:
-  params:
-    # -- Create the argocd-cmd-params-cm configmap
-    create: true
-    server:
-      insecure: true
