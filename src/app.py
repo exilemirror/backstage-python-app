@@ -16,7 +16,7 @@ def details():
         "message": "Welcome to the Details page.",
         "time": datetime.datetime.now().strftime("%I:%M:%S%p on %B %d, %Y"),
         "hostname": socket.gethostname(),
-        "message": "Hello there!"
+        "message": "Hello world!"
 
     })
 
