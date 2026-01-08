@@ -43,7 +43,7 @@ jobs:
       - name: Argo cd sync
         shell: bash
         run: |
-          argocd login argocd-server.argocd \
+          /usr/local/bin/argocd login argocd-server.argocd \
             --insecure \
             --grpc-web \
             --username admin \
